@@ -1,0 +1,123 @@
+.title-nameUser {
+    color: aliceblue;
+}
+
+.thread-card {
+    background: rgb(16 26 56);
+}
+
+.light-theme .thread-card {
+    background: #eff0f1;
+} 
+
+.title-thread {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.light-theme .content-thread {
+    color: #cfcfcf;
+}
+
+.content-card:hover {
+    opacity: 0.3;
+}
+
+.thread-main {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    flex-flow: wrap;
+}
+
+.light-theme .thread-post {
+    background: transparent;
+}
+
+.item-thread {
+    width: 48%;
+    height: 300px;
+    background: var(--card-bg);
+    margin-bottom: 20px;
+}
+
+.thread {
+    padding: 2rem;
+}
+
+.card-content {
+    padding: 67px;
+}
+
+.Judul {
+    font-size: 45px;
+    font-family: revert; 
+}
+
+.delete i:hover {
+    background: #4c46ab;
+    width: 71px;
+    border-radius: 56px;
+    transform: translateY(0);
+}
+
+.light-theme .delete i:hover {
+    width: 71px;
+    border-radius: 56px;
+    transform: translateY(0);
+    background: #a587ff;
+}
+
+.profile:hover {
+    background: var(--team-card-bg);
+}
+
+.light-theme .profile:hover {
+    background: #5b5b9b;
+}
+
+.item-thread:hover {
+    transform: translateY(0);
+    box-shadow: 0 0 0px #9ed3ff, -38px 0 145px #020672, 10px 0 60px #6b12af;
+}
+
+.light-theme .item-thread:hover {
+    transform: translateY(0);
+    box-shadow: 0 0 0px #9ed3ff, -38px 0 145px #bfd0ff, 10px 0 60px #9b45dd;
+}
+
+.light-theme .item-thread {
+    background: #816aff;
+}
+
+@media only screen and (max-width: 768px) {
+    .item-thread {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .Judul {
+        font-size: 17px;
+    }
+
+    .thread-content {
+        font-size: 9px;
+    }
+
+    .thread {
+        padding: 0;
+    }
+
+    .title-sub {
+        margin-top: 20px;
+    }
+
+    .card-content {
+        padding: 0;
+    }
+
+    .item-thread {
+        width: 100%;
+    }
+}

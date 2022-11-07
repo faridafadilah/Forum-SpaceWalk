@@ -1,0 +1,200 @@
+/* CSS RESPONSIVE SHOW MAIN FORUM */
+
+.light-theme .card-body {
+    background-color: white;
+}
+
+.head-category {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.card-category:hover {
+    transform: translateY(0);
+    box-shadow: 0 0 0px #fff, -10px 0 41px #ad24ad, 10px 0 41px #3e90f5;
+}
+
+.description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: rgb(145, 145, 145);
+    font-family: ui-sans-serif;
+    cursor: pointer;
+}
+
+.title-category {
+    color: var(--primary-color); 
+    font-size: 2.5rem; 
+    cursor: pointer;
+}
+
+.image-category {
+    cursor: pointer;
+}
+
+.input {
+    display: flex; 
+    margin-left: 50%;
+}
+
+.item-category {
+    width: 30%;
+}
+
+.light-theme .card-body {
+    box-shadow: none;
+    background: #d4d4d5;
+}
+
+.btn-load-more {
+    position: relative; 
+    margin-left: 84%;
+}
+
+.card-category {
+    max-width: 345; 
+    margin-bottom: 20px; 
+    background: var(--team-card-bg);
+}
+
+.create-main {
+    text-align: center;
+    padding: 40px 20% 0px;
+    position: relative;
+    padding-bottom: 5%;
+} 
+
+@media only screen and (max-width: 992px) {
+    .head-category {
+        height: 33px;
+    }
+
+    .category {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .description {
+        -webkit-line-clamp: 1;
+    }
+    
+    .btn-load-more {
+        position: relative;
+        margin-left: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .category {
+        font-size: 13px;
+        width: 30%;
+        margin-top: 12px;
+    }
+
+    .card-category {
+        height: 95%;
+    }
+
+    .input {
+        display: flex;
+        margin-left: 35%;
+        height: 32px;
+    }
+
+    .button-add {
+        margin-top: 6px;
+    }
+
+    .btn-load-more {
+        position: relative;
+        margin-left: 72%;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    /* Tampilan Main Forum */
+    .item-category {
+        width: 100%;
+    }
+
+    .btn-load-more {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .category {
+        font-size: 18px;
+        margin-top: 0px;
+        width: 48%;
+    }
+  }
+
+  /* CSS RESPONSIVE DETAIL MAIN FORUM  */
+h2 {
+    color: var(--primary-color); 
+    font-size: 30px; 
+    font-family: system-ui;
+}
+
+.content-detail {
+    padding: 67px;
+}
+
+.detail {
+    padding: 2rem;
+}
+
+.category__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    flex-flow: wrap;
+}
+
+.paragraph {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 62%;
+    margin-top: 5px;
+    color: var(--bs-gray-600);
+    font-family: sans-serif;
+}
+
+  @media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .content-detail {
+        padding: 0;
+    }
+
+    .detail {
+        padding: 0;
+    }
+
+    .paragraph {
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .sub-judul {
+        font-size: 15px;
+    }
+  }

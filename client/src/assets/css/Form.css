@@ -1,0 +1,33 @@
+.create-main {
+    text-align: center;
+    padding: 40px 20% 0px;
+}
+
+.text-input {
+    background: white;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.typograpy{
+    text-align: left;
+    font-size: 17px;
+    font-family: 'remixicon';
+    margin-top: 13px;
+}
+
+.text-area {
+    overflow: hidden;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.image {
+    margin-top: 12px;
+}
+
+.image img {
+    width: 319px;
+}
