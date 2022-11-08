@@ -11,7 +11,7 @@ module.exports = function(app) {
   });
 
    // Create thread
-   app.post("/api/thread/create",[authJwt.verifyToken], thread.create);
+   app.post("/api/thread/create", [authJwt.verifyToken], thread.create);
 
    // Retrieve all thread
    app.get("/api/thread/", thread.findAll);

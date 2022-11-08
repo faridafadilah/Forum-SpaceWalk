@@ -84,7 +84,6 @@ const CreateThread = () => {
         <TextField
           required
           fullWidth
-          label="Title"
           className="text-input"
           name="title"
           value={title}

@@ -56,7 +56,7 @@ morgan.token("user", (req, res) => {
   if (token) {
     jwt.verify(token, config.secret, (err, decoded) => {
       user.push(
-        decoded ? decoded.id : "Anonymous",
+        decoded ? decoded.id : null,
         decoded ? decoded.username : "Anonymous"
       );
     });

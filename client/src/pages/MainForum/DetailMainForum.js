@@ -24,7 +24,7 @@ function DetailMainForum() {
   const { id } = useParams();
   const [main, setMain] = useState(null);
   const [subs, setSubs] = useState([]);
-  const [limit, setLimit] = useState(2);
+  const [limit, setLimit] = useState(3);
   const [lastId, setLastId] = useState(0);
   const [tempId, setTempId] = useState(0);
   const [hasMore, setHasMore] = useState(false);

@@ -8,9 +8,12 @@ const bcrypt = require("bcryptjs");
 
 // Controller For Register
 exports.signup = (req, res) => { 
+  const username = req.body.username
+  const splitUsername = username.split(' ');
+  if (splitUsername[1] !== undefined) return res.status(400).send({ message: "Username Tidak Boleh ada Spasi." });
   // Save User to Database
   User.create({
-    username: req.body.username,
+    username: username,
     email: req.body.email,
     password: bcrypt.hashSync(req.body.password, 8)
   })
@@ -51,7 +54,7 @@ exports.signin = (req, res) => {
       if (!user) {
         return res.status(404).send({ message: "User Not found." });
       }
-      // valiadasi jika
+      // compare password
       const passwordIsValid = bcrypt.compareSync(
         req.body.password,
         user.password
@@ -63,15 +66,6 @@ exports.signin = (req, res) => {
           message: "Invalid Password and Username!",
         });
       }
-
-      // variabel get token
-      const token = jwt.sign(
-        { id: user.id, username: user.username, email: user.email },
-        config.secret,
-        {
-          expiresIn: 86400 // 24 hours
-        }
-      );
 
       const authorities = [];
       // get role lalu tanpilkan di respons
@@ -87,6 +81,15 @@ exports.signin = (req, res) => {
           accessToken: token,
         });
       });
+
+      // variabel get token
+      const token = jwt.sign(
+        { id: user.id, username: user.username, email: user.email },
+        config.secret,
+        {
+          expiresIn: 86400 // 24 hours
+        }
+      );
     })
 
     .catch((err) => {

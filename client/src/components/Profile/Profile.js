@@ -12,7 +12,7 @@ import Loading from "../UI Public/Loading/Loading";
 import ImageDefault from "../../assets/img/profile-default.jpg";
 import Image1 from "../../assets/img/spacewalk/angkasa9.jpg";
 import Image2 from "../../assets/img/spacewalk/angkasa10.jpg";
-import Image3 from "../../assets/img/spacewalk/angkasa11.jpg";
+import Image3 from "../../assets/img/spacewalk/angkasa1.jpg";
 import Image4 from "../../assets/img/spacewalk/angkasa4.jpg";
 import Image5 from "../../assets/img/spacewalk/angkasa5.jpg";
 import Image6 from "../../assets/img/spacewalk/angkasa6.jpg";

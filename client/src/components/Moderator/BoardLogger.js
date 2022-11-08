@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import UserService from '../../services/user.service'
 import ReactPaginate from 'react-paginate';
+import '../../assets/css/Tabel.css';
 
 const formatMethod = (method) => {
   if (method === 'GET') {
       return <button style={{ background: 'green', fontWeight: 'bold', color: 'white', padding: '5px', width: '90px', border: 'none', cursor: 'none'}}>{method}</button>
   } else if (method === 'POST') {
-      return <button style={{ background: '#2185d0', fontWeight: 'bold', color: 'white', padding: '5px', width: '90px', border: 'none', cursor: 'none'}}>{method}</button>
+      return <button style={{ background: 'rgb(3 35 149)', fontWeight: 'bold', color: 'white', padding: '5px', width: '90px', border: 'none', cursor: 'none'}}>{method}</button>
   } else if (method === 'PUT') {
       return <button style={{ background: 'orange', fontWeight: 'bold', color: 'white', padding: '5px', width: '90px', border: 'none', cursor: 'none'}}>{method}</button>
   } else if (method === 'DELETE') {
       return <button style={{ background: '#db2828', fontWeight: 'bold', color: 'white', padding: '5px', width: '90px', border: 'none', cursor: 'none'}}>{method}</button>
+  } else {
+    return <button style={{ background: 'orange', fontWeight: 'bold', color: 'white', padding: '5px', width: '90px', border: 'none', cursor: 'none'}}>{method}</button>
   }
 }
 
@@ -92,9 +95,9 @@ const BoardLogger = () => {
               Search
             </button>
           </div>
-          <table className="table text-center">
+          <table className="table text-center table-dark table-striped">
         <thead>
-          <tr style={{color: 'var(--heading-color)'}}>
+          <tr style={{color: 'white'}}>
             <th scope="col">User ID</th>
             <th scope="col">Username</th>
             <th scope="col">Method</th>
@@ -107,15 +110,15 @@ const BoardLogger = () => {
         </thead>
         <tbody>
           {users? users.map((user, i) => (
-            <tr key={i} style={{color: 'var(--heading-color)'}}>
-                <td>{user.userId}</td>
+            <tr key={i} style={{color: 'white'}}>
+                <td>{user.userId === null? '-' : user.userId}</td>
                 <td>{user.username}</td>
                 <td>{formatMethod(user.request_method)}</td>
                 <td>{user.endpoint}</td>
                 <td>{formatStatusCode(user.status_code)}</td>
                 <td>{user.content_length}</td>
                 <td>{user.response_time}</td>
-                <td>{user.createdAt}</td>
+                <td>{user.date}</td>
             </tr>
           )) : null}
         </tbody>

@@ -14,7 +14,6 @@ const BoardModerator = () => {
     UserService.getUserRole()
       .then((response) => {
         setUsers(response.data)
-        console.log(response.data);
       })
       .catch((e) => {
         console.log(e)
@@ -23,9 +22,9 @@ const BoardModerator = () => {
 
   return (
     <div className="container mt-5">
-      <table class="table text-center">
+      <table class="table text-center table-dark table-striped">
         <thead>
-          <tr style={{color: 'var(--heading-color)'}}>
+          <tr style={{color: 'white'}}>
             <th scope="col">ID</th>
             <th scope="col">Username</th>
             <th scope="col">Role</th>
@@ -35,7 +34,7 @@ const BoardModerator = () => {
         </thead>
         <tbody>
           {users? users.map((user, i) => (
-            <tr style={{color: 'var(--heading-color)'}}>
+            <tr style={{color: 'white'}}>
             <td key={i}>{user.id}</td>
             <td>{user.username}</td>
             <td>{user.name}</td>

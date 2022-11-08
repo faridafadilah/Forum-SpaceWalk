@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 const categoryData = [
   {
-    link: '/main/2',
+    link: '/main/4',
     icon: 'ri-apps-line',
     title: 'Games',
     desc: 'Advisor for the Collaboration of the Indonesian East Area Community (KITA) Gunawan Prasetyo said, the Euro Club is part of the KITA collaboration that continues to consistently develop the potential of gamers in community-based areas. This year, a national-scale tournament was held again, starting with qualifications at the district and city levels.'
@@ -16,13 +16,13 @@ const categoryData = [
     desc: "God Level, This Person Paints with 'Pure HTML and CSS' Diana Adrianne Smith, is the person behind all of this, the programmer community on Twitter is amazed to see her work. How can it be as realistic as this, when everything is generated from the pure structure of HTML and CSS codes!",
   },
   {
-    link: '/main/4',
+    link: '/main/2',
     icon: 'ri-code-s-slash-line',
     title: 'Web Developer',
     desc: 'If you have a sufficient app development budget, the right team of highly skilled developers, and picked the right app development framework then no power on earth could stop your app from being successful.   '
   },
   {
-    link: '/main/16',
+    link: '/main/1',
     icon: 'ri-rocket-line',
     title: 'Healty',
     desc: "Hello, those of you who feel lazy to exercise because they have to leave the house for jogging or cycling for 60 minutes, Now there is a sport called High Intensity Interval Training, aka HIIT, which can burn calories for 20 minutes."

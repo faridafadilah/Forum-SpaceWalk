@@ -5,8 +5,12 @@
 
 .text-input {
     background: white;
-    border-radius: 12px;
+    border-radius: 3px;
     margin-top: 12px;
+}
+
+.text-input::placeholder {
+    border: none;
 }
 
 .typograpy{
@@ -20,8 +24,9 @@
     overflow: hidden;
     width: 100%;
     background: white;
-    border-radius: 12px;
+    border-radius: 3px;
     padding: 15px;
+    border: 1px solid silver;
 }
 
 .image {

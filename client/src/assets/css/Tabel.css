@@ -1,0 +1,4 @@
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #0d6efd;
+    color: #fff;
+}

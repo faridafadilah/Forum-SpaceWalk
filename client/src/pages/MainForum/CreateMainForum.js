@@ -67,7 +67,7 @@ const CreateMainForum = () => {
           className="text-input"
           fullWidth
           value={title || ""}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value) }
         />
         <h2 className="typograpy">Description</h2>
         <textarea

@@ -68,7 +68,6 @@ const CreateSubForum = () => {
           required
           fullWidth
           className="text-input"
-          label="Judul"
           name="judul"
           value={judul || ""}
           onChange={(e) => setJudul(e.target.value)}

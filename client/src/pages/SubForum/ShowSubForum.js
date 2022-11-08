@@ -29,7 +29,7 @@ const ShowSubForum = ({ theme }) => {
   const { user: currentUser } = useSelector((state) => state.auth);
   const [sub, setSub] = useState(null);
   const [thread, setThread] = useState([]);
-  const [limit, setLimit] = useState(3);
+  const [limit, setLimit] = useState(4);
   const [lastId, setLastId] = useState(0);
   const [tempId, setTempId] = useState(0);
   const [hasMore, setHasMore] = useState(false);
