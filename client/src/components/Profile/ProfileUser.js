@@ -278,7 +278,7 @@ function Profile() {
                       </Grid>
                     ))
                   ) : (
-                    <p style={{color: 'var(--heading-color)'}}>yah.. belum ada thread yang dibuat :(</p>
+                    <p style={{color: 'var(--heading-color)'}}>ups... no threads have been created yet :(</p>
                   )}
                 </div>
               </InfiniteScroll>

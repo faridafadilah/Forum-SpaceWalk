@@ -48,7 +48,6 @@ const CreateMainForum = () => {
     formData.append("description", description);
     MainService.createMainForum(formData)
       .then((response) => {
-        console.log(response.data);
         navigate("/main");
       })
       .catch((e) => {

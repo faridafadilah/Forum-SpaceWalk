@@ -133,14 +133,16 @@ exports.update = async (req, res) => {
     const file = req.files.file
     const fileSize = file.data.length
     const ext = path.extname(file.name)
-    fileName = file.md5 + new Date().toLocaleTimeString() + ext
+    fileName = file.md5 +  ext
     const allowedType = ['.png', '.jpg', '.jpeg']
 
     if (!allowedType.includes(ext.toLowerCase())) return res.status(422).json({ msg: 'Invalid Images' })
     if (fileSize > 5000000) return res.status(422).json({ msg: 'Image must be less than 5 MB' })
 
+   if(subs.image) {
     const filepath = `./public/imageSub/${subs.image}`
     fs.unlinkSync(filepath)
+   }
 
     file.mv(`./public/imageSub/${fileName}`, (err) => {
       if (err) return res.status(500).json({ msg: err.message })

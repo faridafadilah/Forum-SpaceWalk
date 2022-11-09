@@ -34,7 +34,7 @@ const CreateThread = () => {
 
   useEffect(() => {
     getUser(currentUser.id)
-  }, [])
+  }, [currentUser])
 
   const loadImage = (e) => {
     const image = e.target.files[0]

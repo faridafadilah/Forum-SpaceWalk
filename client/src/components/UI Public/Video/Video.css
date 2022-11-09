@@ -1,0 +1,29 @@
+#video {
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.txt-head {
+    font-size: 30px;
+    font-family: cursive;
+    color: var(--primary-color);
+}
+
+.txt-body {
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(145, 145, 145);
+}
+
+@media only screen and (max-width: 768px) {
+    .txt-head {
+        font-size: 22px;
+    }
+
+    .txt-body {
+        font-size: 9px;
+    }
+}

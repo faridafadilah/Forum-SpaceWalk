@@ -233,7 +233,7 @@ function Profile() {
                 dataLength={thread.length}
                 next={fetchMore}
                 hasMore={hasMore}
-                loader={<h4>Loading...</h4>}
+                loader={<h4 color="var(--heading-color)">Loading...</h4>}
               >
                 <div style={{ marginTop: "30px" }}>
                   {thread === ''? null : <h2 className="ctr fw-bold mb-3">Thread yang dibuat!</h2>}
@@ -299,7 +299,7 @@ function Profile() {
                       </Grid>
                     ))
                   ) : (
-                    <p style={{color: 'var(--heading-color)'}}>yah... belum ada thread yang dibuat :(</p>
+                    <p style={{color: 'var(--heading-color)'}}>ups... no threads have been created yet :(</p>
                   )}
                 </div>
               </InfiniteScroll>

@@ -22,7 +22,7 @@ const BoardModerator = () => {
 
   return (
     <div className="container mt-5">
-      <table class="table text-center table-dark table-striped">
+      <table className="table text-center table-dark table-striped">
         <thead>
           <tr style={{color: 'white'}}>
             <th scope="col">ID</th>

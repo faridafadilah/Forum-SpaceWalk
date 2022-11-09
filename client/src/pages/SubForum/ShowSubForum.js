@@ -4,13 +4,11 @@ import moment from "moment";
 import parser from "html-react-parser";
 import { Container } from "@mui/system";
 import InfiniteScroll from "react-infinite-scroll-component";
-import CardActions from '@mui/material/CardActions';
 import {
   Avatar,
   Button,
   Card,
   CardHeader,
-  CardMedia,
   CardContent,
   IconButton,
 } from "@mui/material";
@@ -140,7 +138,7 @@ const ShowSubForum = ({ theme }) => {
             >
               <div className="thread-main">
                 {thread.length < 1 ? (
-                  <h1>Yuk Buat Thread Baru</h1>
+                  <h1>let's create a new thread</h1>
                 ) : (
                   thread.map((thread, index) => (
                     <div key={index} className="item-thread">

@@ -133,7 +133,7 @@ function DetailMainForum() {
             >
               <div>
                 {subs.length < 1 ? (
-                  <h1>Data Masih Kosong</h1>
+                  <h1>let's create a new sub forum</h1>
                 ) : (
                   subs.map((sub, index) => (
                     <Grid
